@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+</head>
+
+<body>
+    <div class = "mainBody">
+    <h1>Book Wishlist</h1>
+        <form action = "/submit" method = "POST">
+            <label for = "BookTitle"> BookTitle:</label>
+            <Select id = "BookTitle" name = "BookTitle">
+                <option value="BeoWolf">BeoWolf</option>
+                <option value="Outsiders">Oustsiders</option>
+                <option value="HarryPotter">HarryPotter</option>
+                <option value="LordOfTheRings">LordOfTheRings</option>
+            </Select>
+
+            <label for = "ratings"> Rating:</label>
+            <input type= "number" id ="rating name= "ratings" min="1" required>
+
+            
+
+
+            <label for ="notes">Notes:</label>
+            <textarea id = "notes" name="notes"></textarea>
+
+            <button type = "submit">Submit</button>
+            
+        </form>
+
+        <a href ="/summary">View Summary</a>
+    </div>
+
+</body>
+</html>
